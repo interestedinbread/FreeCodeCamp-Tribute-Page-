@@ -1,0 +1,278 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Boots landing page</title>
+</head>
+
+<body>
+<header id="header">
+  <div class="header-flex-container">
+  <div class="header-flex-container-left">
+  <img id="header-img" src="https://static.thenounproject.com/png/35776-200.png">
+  <h1>DankBoots</h1>
+  </div>
+  <div class="header-flex-container-right">
+  <nav id="nav-bar">
+    <ul id="nav-bar-list">
+      <li class="nav-list-item"><a href="#boot-info" class="nav-link">Info</a></li>
+      <li class="nav-list-item"><a href="#video-container" class="nav-link">Demonstration</a></li>
+      <li class="nav-list-item"><a href="#boot-models-container" class="nav-link">Pricing</a></li>
+    </ul>
+  </nav>
+  </div>
+  </div>
+</header>
+
+<main>
+  <div id="form-box">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <label for="email" id="email-label">Receive dank emails</label>
+    <input type="email" id="email" name="email" placeholder="enter your email address" required>
+    <input type="submit" value="Chug On" id="submit"> 
+    </form>
+    </div>
+
+    <div id="boot-info">
+      <div class="flex-container-left">
+      <img class="info-icon" id="leather-icon" src="https://www.svgrepo.com/show/178188/leather-fashion.svg">
+      <img class="info-icon" id="boot-icon" src="https://cdn-icons-png.flaticon.com/512/908/908036.png">
+      <img class="info-icon" id="thumbs-up-icon" src="https://static.vecteezy.com/system/resources/thumbnails/007/737/987/small/thumbs-up-symbol-icon-illustration-free-vector.jpg">
+      
+      </div>
+      <div class="flex-container-right">
+        <h2 class="info-heading">Dank Materials</h2>
+        <p class="info">Our boots are made from leather that chugs on and on. You can subject these boots to the gnarliest of conditions and they will not stop chugging. Just ask any one of our thousands of satisfied customers.</p>
+      <h2 class="info-heading">Variety</h2>
+        <p class="info">We offer hundreds of different styles of dank boots, ensuring that you will find the boot that is dankest to you. We even offer custom boot designs through our online boot builder. </p>
+      <h2 class="info-heading">Satisfaction 
+        Guaranteed</h2>
+        <p class="info">If you aren't absolutely chuffed about your new boots, just holler and we will refund your purchase. We take customer satisfaction very seriously at DankBoots and your feedback is important to us. </p>
+      </div>
+    </div>
+
+<div id="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dFOErVWlsxg?si=X0WDCs8d_nUnFD0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+</div>
+<div id="boot-models-container">
+  <div class="boot-model-info" id="boot-model-info-1">
+    <h3 class="boot-model-name">Rugged Boot</h3>
+    <h4 class="boot-model-price">$200</h4>
+    <ul>
+      <li class="boot-model-text">Durable, versatile, dank.</li>
+      <li class="boot-model-text">Show the ground who's boss.</li>
+      <li class="boot-model-text">Available in 69 colors.</li>
+    </ul>
+    </div>
+
+  <div class="boot-model-info" id="boot-model-info-2">
+    <h3 class="boot-model-name" >Stylish Boot</h3>
+    <h4 class="boot-model-price">$250</h4>
+    <ul>
+      <li class="boot-model-text">Fashionable, hip, righteous.</li>
+      <li class="boot-model-text">Stand out in any evironement.</li>
+      <li class="boot-model-text">Wear them in the gravel pit or the office or the bedroom.</li>
+      </ul>
+    </div>
+
+  <div class="boot-model-info" id="boot-model-info-3">
+    <h3 class="boot-model-name">Winter Boot</h3>
+    <h4 class="boot-model-price">$300</h4>
+    <ul>
+      <li class="boot-model-text">Dependable, comfortable, warm.</li>
+      <li class="boot-model-text">Even an avalanche will make way for these bad dogs.</li>
+      <li class="boot-model-text">Your feet will never feel cold or uncool.</li>
+      </ul>
+      
+    </div>
+
+</div>
+
+</main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: sans-serif;
+}
+
+main {
+  padding-top: 100px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+    margin: 30px auto
+}
+
+#email-label {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 700
+}
+
+#email {
+  margin-bottom: 15px;
+  width: 200px; 
+}
+
+#submit-button {
+  background-color: #edd013;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+#header {
+  background-color: #dadee6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.header-flex-container-left {
+  display: flex;
+}
+
+#header-img {
+  height: 70px;
+  margin: 0 15px;
+}
+
+.nav-list-item {
+  list-style-type: none;
+  margin:  15;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+.nav-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar-list{
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.header-flex-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+
+
+.info-icon {
+  height: auto;
+  width: 70px;   
+}
+
+#thumbs-up-icon {
+  height: 80px;
+  width: 130px; 
+  margin: -10px -30px 15 -30px;;
+}
+
+#leather-icon {
+  margin-top: 20px;
+  margin-right:
+}
+
+.flex-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.flex-container-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+#boot-info {
+  display: flex;
+  justify-content: center;
+}
+
+.info-heading {
+  margin-bottom: -8px;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.boot-model-text {
+  list-style-type: none;
+  margin: 15px 17px 15px -17px;
+  text-align: center  
+}
+
+.boot-model-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 300px;
+  margin: 0 15px;
+}
+
+.boot-model-name, .boot-model-price {
+  margin: 15px auto
+}
+
+#boot-models-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto 50px auto;
+  max-width: 950px;
+}
+
+.boot-model-name {
+  background: #dadee6;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+  bottom: 15px;
+}
+
+.boot-model-price {
+  font-size: 1.8rem
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }  
+}
+
+** end of undefined **
+
